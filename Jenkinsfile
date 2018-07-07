@@ -1,7 +1,17 @@
-// Jenkinsfile (Scripted Pipeline)
-node {
-    stage('Build') {
-        sh 'make' 
-        archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
+pipeline {
+    agent any
+
+    stages {
+        stage("Build") {
+            steps {
+                sh 'Hello World'
+            }
+        }
+    }
+
+    post {
+        always {
+            sh 'Hello World'
+        }
     }
 }
