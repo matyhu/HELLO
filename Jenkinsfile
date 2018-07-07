@@ -9,9 +9,9 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            sh 'Hello World'
-        }
-    }
+  //  post {
+       // always {
+           // sh 'Hello World'
+      //  }
+   // }
 }
